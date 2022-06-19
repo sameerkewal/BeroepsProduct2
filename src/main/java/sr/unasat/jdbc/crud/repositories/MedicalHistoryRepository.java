@@ -125,7 +125,6 @@ public class MedicalHistoryRepository {
             return history;
         }
     }
-
     public List<MedicalHistory> findAllRecords(){
         List<MedicalHistory> fullHistory = new ArrayList<>();
         Statement stmt = null;
