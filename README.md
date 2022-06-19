@@ -2,7 +2,7 @@
 jdbc Crud example application
 
 #SQL Script
-De sql script is geplaats in de resource folder.
+De sql script is geplaatst in de resource folder.
 De sql script bevat de schema & insert statements.
 
 #Opdracht
