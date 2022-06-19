@@ -1,9 +1,7 @@
 package sr.unasat.jdbc.crud.repositories;
 
-import com.mysql.cj.protocol.Resultset;
 import sr.unasat.jdbc.crud.entities.MedicalHistory;
 import sr.unasat.jdbc.crud.entities.Persoon;
-import sun.nio.cs.ext.MS932;
 
 import java.sql.*;
 import java.time.LocalDate;
