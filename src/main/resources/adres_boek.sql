@@ -112,4 +112,3 @@ CREATE TABLE Medical_History(id int not null auto_increment, Illness CHAR(50) NO
 
 
 
-
