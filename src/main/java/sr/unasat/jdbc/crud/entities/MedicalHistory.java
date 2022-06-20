@@ -61,10 +61,10 @@ public class MedicalHistory {
     public String toString(){
         return  "Medical History{" +
                 " id = " + id +
-                " illness = " + this.illness +
-                " Date of diagnosis = " + this.dateOfDiagnosis.toString() +
-                " Allergies = " + this.allergies +
-                " Persoon = " + persoon +
+                ", illness = " + this.illness +
+                ", Date of diagnosis = " + this.dateOfDiagnosis.toString() +
+                ", Allergies = " + this.allergies +
+                ", Persoon = " + persoon +
                  "}";
     }
 }

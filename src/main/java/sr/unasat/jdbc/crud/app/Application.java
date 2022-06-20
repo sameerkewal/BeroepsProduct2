@@ -72,12 +72,15 @@ public class Application {
 
         MedicalHistoryRepository mhr = new MedicalHistoryRepository();
 
-        MedicalHistory vb = new MedicalHistory(1,"lightheadedness", LocalDate.of(2002,05,20), "milk", yasmine);
+        MedicalHistory vb = new MedicalHistory(1,"lightheadedness", LocalDate.of(2002,10,31), "milk", yasmine);
         //mhr.insertIntoRecord(vb);
-        System.out.println(mhr.findOneRecord("lightheadedness", LocalDate.of(2002, 05, 20)));
+       mhr.deleteOneRecord(vb);
+
+
+
+
 
         System.out.println(mhr.findAllRecords());
-
 
 
 

@@ -56,14 +56,15 @@ public class MedicalHistoryRepository {
 
 
     public int deleteOneRecord(MedicalHistory history) {
+        MedicalHistory toDelete = this.findOneRecord(history.getIllness(), history.date());
         PreparedStatement stmt = null;
         int result = 0;
         try {
             String sql = "DELETE FROM Medical_History where Medical_History.id = ?";
             stmt = connection.prepareStatement(sql);
-            stmt.setInt(1, history.getId());
+            stmt.setInt(1, toDelete.getId());
             result = stmt.executeUpdate();
-            System.out.println("Deleted: " + history.getId());
+            System.out.println("Deleted: " + toDelete.getId());
         } catch (SQLException e) {
 
         } finally {
@@ -89,7 +90,6 @@ public class MedicalHistoryRepository {
 
     public MedicalHistory findOneRecord(String illness, LocalDate date){
         MedicalHistory history = null;
-        String test = null;
         PreparedStatement stmt = null;
 
         try{
